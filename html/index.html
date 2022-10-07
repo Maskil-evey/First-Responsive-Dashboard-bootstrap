@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&family=Open+Sans:wght@300&family=Oswald:wght@300&family=Roboto+Condensed&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+     <div class="d-flex" id="wrapper">
+        <!-- sidebar start -->
+        <div class="bg-dark shadow overflow" id="sidebar-wrapper">
+          
+            <div class="sidebar-heading  py4 primary-text fs-4 fw-bold text-uppercase">
+                <i class=" fa fa-grav text-danger  pe-2" aria-hidden="true"></i> <span class="text-light">Nattty</span> 
+            </div>
+            <div class="list-group text-start list-group-flush my-3">
+              <a href="" class="list-group-item  list-group-item-action bg-transparent active fw-bold">
+                <span>Dashboard</span>
+                <i class="fa fa-tachometer icon-1" aria-hidden="true"></i>
+              </a>
+                <a href="" class="list-group-item list-group-item-action bg-transparent second-text">
+                  <span>Orders</span>
+                  <i class="fa fa-credit-card-alt  icon-2" aria-hidden="true"></i>
+                </a>
+                <a href="" class="list-group-item  list-group-item-action bg-transparent second-text">
+                  <span>Categories</span>
+                  <i class="fa fa-tags  fa- icon-3" aria-hidden="true"></i>
+                </a>
+                <a href="" class="list-group-item  list-group-item-action bg-transparent second-text">
+                  <span>Analytics</span>
+                  <i class="fa fa-bar-chart  icon-4" aria-hidden="true"></i>
+                </a>
+                <a href="" class="list-group-item   list-group-item-action bg-transparent second-text">
+                  <span class="mt-1">Collection</span>
+                  <i class="fa fa-tags   icon-5" aria-hidden="true"></i>
+                </a>
+                <a href="" class="list-group-item  list-group-item-action bg-transparent second-text">
+                  <span>Products</span>
+                  <i class="fa fa-shopping-cart  icon-6" aria-hidden="true"></i>
+                </a>
+                <a href="" class="list-group-item  list-group-item-action bg-transparent second-text ">
+                  <span>Discount</span>
+                  <i class="fa fa-scissors
+                    icon-7" aria-hidden="true"></i>
+                </a>
+                <a href="" class="list-group-item  list-group-item-action bg-transparent second-text ">
+                  <span>Employees</span>
+                  <i class="fa fa-users  icon-8" aria-hidden="true"></i>
+                </a>
+                <a href="" class="list-group-item  list-group-item-action bg-transparent second-text ">
+                  <span>Customers</span>
+                  <i class="fa fa-user-circle  icon-9" aria-hidden="true"></i>
+                </a>
+                
+
+            </div>
+
+
+        </div>
+
+         
+        <!-- sidebar ends -->
+
+        <div id="page-content " class="w-100">
+          <div class="container-fluid">
+            <div class="row mt-1 justify-content-md-center justify-content-lg-end justify-content-start" id="navbarNav">
+              <div class="col-5">
+                <ul class="list-unstyled d-flex ">
+                  <li class="mt-1">
+                    <div  class="d-flex  shadow p-2 rounded-pill text-center text-light ">
+                      <i class="fa fa-bell-o me-5" aria-hidden="true">
+                      </i>
+                      <i class="fa fa-search me-5" aria-hidden="true">
+                      </i>
+                      <i class="fa fa-sign-out me-2 " aria-hidden="true">
+                        <div class="hover-2">
+                            <a href="" class="list-unstyled li">Log-Out</a>
+                        </div>
+                      </i>
+                    </div>
+                  </li>
+                  <li class="nav-item me-5" onclick="myFunction()">
+                    <div  style="width: 40px; height: 40px; border-radius:50%; background-image:url(../assets/avatar.png); background-size:contain;">
+                      <div id="myDropdown" class="dropdown-content">
+                        <div class="d-flex">
+                          <a href="">Account No: 00123</a>
+                          <a href="" class="text-end">Balance: $ 200,000</a>
+                        </div>
+                       
+                        <a href="">Nathan Daisi</a>
+                        <a href="">maskil@gmail.com</a>
+                        <a href="">Edit Profile</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        
+              <h2 class=" dispaly-3 mb-4">
+                <i class="fa fa-arrow-right ms-4 text-danger fs-5" id="menu-toggle" aria-hidden="true"></i> <span class="text-light">Dashboard</span> 
+              </h2>
+              <!-- Dashboard contents -->
+               <!-- using bootsrap cards for the earnings etc -->
+            <div class="container-fluid px-4">
+               <div class="row g-2">
+                <!-- col start -->
+                <div class="col-md-4">
+                  <div class="card border-bottom border-2 border-top-0 border-danger border-start-0 border-end-0  shadow">
+                    <div class="card-body">
+                      <p class=" card-text text-danger fs-3">Earnings</p>
+                      <h4 class="card-title fs-2 text-secondary fw-bold mb-3">$ 45,000</h4>
+                      <p class="card-subtitle"><i class="fa fa-arrow-up pe-1 fw-bold" aria-hidden="true"></i>20.45%</p>
+                      <small class="text-secondary">I used boostrap card for this</small>
+                    </div>
+                  </div>
+                </div>
+                <!-- col end -->
+                   <!-- col start -->
+                   <div class="col-md-4">
+                    <div class="card border-bottom border-2 border-top-0 border-danger border-start-0 border-end-0 shadow">
+                      <div class="card-body">
+                        <p class=" card-text text-danger fs-3">Customer</p>
+                        <h4 class="card-title fs-2 text-secondary fw-bold mb-3">53,000</h4>
+                        <p class="card-subtitle second-text"><i class="fa fa-arrow-down text-danger pe-1 fw-bold" aria-hidden="true"></i>0.45%</p>
+                        <small class="text-secondary">I used boostrap card for this</small>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- col end -->
+                     <!-- col start -->
+                <div class="col-md-4">
+                  <div class="card pointer border-bottom border-2 border-top-0 border-danger border-start-0 border-end-0  shadow">
+                    <div class="card-body">
+                      <p class=" card-text text-danger fs-3">Profit</p>
+                      <h4 class="card-title fs-2 text-secondary fw-bold mb-3">+ 25,000</h4>
+                      <p class="card-subtitle"><i class="fa fa-arrow-up pe-1 fw-bold" aria-hidden="true"></i>10.45%</p>
+                      <small class="text-secondary">I used boostrap card for this</small>
+                    </div>
+                  </div>
+                </div>
+                <!-- col end -->
+                
+               </div>
+                
+                
+            </div>
+          <div>
+
+    </div>
+
+    
+      <script src="../js/home.js"></script>
+      <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
